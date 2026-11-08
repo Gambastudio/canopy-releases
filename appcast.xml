@@ -4,5 +4,48 @@
     <title>Canopy</title>
     <link>https://gambastudio.github.io/canopy-releases/appcast.xml</link>
     <language>en</language>
+    <item>
+      <title>Canopy 0.3.0</title>
+      <pubDate>Sun, 08 Nov 2026 08:23:53 +0000</pubDate>
+      <sparkle:version>188</sparkle:version>
+      <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h3>Added</h3>
+<ul>
+<li>Saved scans and fast rescans: every scan is kept on disk, and a rescan reads only the folders that changed since then (via the macOS file system event history) instead of the whole tree.</li>
+<li>Live view while scanning: the largest top-level folders grow on screen as the scan runs.</li>
+<li>Cleanup basket: collect files and folders from anywhere in the app, review them and move them to the Trash in one confirmed step. System and app-critical locations are protected and cannot be added.</li>
+<li>Space hogs: a Cleanup sheet finds typical space wasters (app caches, developer build output and simulators, device backups, Docker data, old downloads, large files untouched for a year) and adds them to the basket.</li>
+<li>Duplicate finder: finds identical files, accounts for APFS clones when showing reclaimable space, and never moves the last copy to the Trash.</li>
+<li>History and comparison: each scan leaves a summary, and "what grew" compares a folder with an earlier scan.</li>
+<li>Interactive charts: the file-type donut shows details on hover, a legend and "Where are these files?".</li>
+<li>Reports: export a summary, folder list, largest files, cleanup or changes report as PDF or CSV, in German or English, with optional company branding.</li>
+<li>Menu bar item: free space of your disks with a low-space warning and your most recent scans; Canopy keeps running there after its last window closes (can be turned off in Settings).</li>
+<li>Finder integration: drop folders onto the window or the Dock icon, open folders with "Open With" &gt; Canopy, Quick Look with the space bar.</li>
+<li>Explorer search (name and path, ⌘F), sorting by size, name or last modified, filters for minimum size and cloud placeholders, and a context menu with Show in Finder, Open, Copy Path and Scan This Folder.</li>
+<li>Command line: <code>Canopy scan</code>, <code>top</code>, <code>history</code>, <code>compare</code>, <code>report</code> and <code>bench</code> run without opening the app; <code>Canopy --version</code> prints version, build and commit.</li>
+<li>The About window, Settings and <code>Canopy --version</code> show version, build number and commit.</li>
+<li>Automatic updates: "Check for Updates…" in the Canopy menu and the menu bar item, and an Updates section in Settings (automatic checks on/off, check now, last check). Canopy asks once before checking automatically and shows the release notes before installing.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Much faster scanning: a new parallel scan engine reads folders on all cores with a single system call per batch of entries.</li>
+<li>Sizes show the space actually used on disk as the main value everywhere (sparse files and clones no longer inflate totals); files with sparse data are marked.</li>
+<li>Online-only OneDrive and iCloud folders are marked instead of downloaded while scanning, so scans of cloud storage finish in seconds. A full cloud scan is available per folder and as a setting.</li>
+<li>Scan progress updates at least every 250 ms, also in slow cloud folders.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Scans no longer hang while a macOS privacy prompt (Desktop, Documents, other apps' data, ...) waits for an answer: a folder that makes no progress for 10 s is counted as unreadable, the scan finishes, and the next rescan reads the folder again.</li>
+<li>Running scans can be stopped (sidebar button, Stop Scan, ⌘.), and stopping now actually reaches the scanner.</li>
+<li>Hard-linked files are counted once, always in the same folder, so totals are stable between scans.</li>
+<li>A failed background rescan keeps the last result and marks it as outdated instead of showing an error.</li>
+<li>Fixed a hang at launch caused by the menu bar item and a crash in the file-type chart.</li>
+<li>Fixed report fraction conversion for Swift 6 toolchains.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/Gambastudio/canopy-releases/releases/download/v0.3.0/Canopy-0.3.0-macOS.zip" length="3670794" type="application/octet-stream" sparkle:edSignature="vzcAv2A1Ctd5+aoGZcNdBlVGYnMYsgnSSLMF6PxG1Gv0g2Fjn0tOSRHjHO+h62ddUhjwAXP6TAFOldy4Rb35Cw=="/>
+    </item>
   </channel>
 </rss>
