@@ -5,6 +5,24 @@
     <link>https://gambastudio.github.io/canopy-releases/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Canopy 0.4.0</title>
+      <pubDate>Fri, 20 Nov 2026 08:35:12 +0000</pubDate>
+      <sparkle:version>191</sparkle:version>
+      <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h3>Features</h3>
+<ul>
+<li>adopt Release Please and a reviewed release strategy for Canopy (epic [#10](https://github.com/Gambastudio/canopy/issues/10)) ([#16](https://github.com/Gambastudio/canopy/issues/16)) ([d4706e8](https://github.com/Gambastudio/canopy/commit/d4706e82d0f4a6f47b205c4cd34b9d4c9772f6b0))</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>**scanner:** list only files of 1 MiB or more as largest files ([#18](https://github.com/Gambastudio/canopy/issues/18)) ([e61d386](https://github.com/Gambastudio/canopy/commit/e61d386ac8fd6cefd2eec3b963bb35fb9a2202bc))</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/Gambastudio/canopy-releases/releases/download/v0.4.0/Canopy-0.4.0-macOS.zip" length="3670895" type="application/octet-stream" sparkle:edSignature="kqdUYDGr57uP9PsdTC9JijbhSTapNhGVILbKQyAZUnriEF3/hHLjZQ76i6Wr0Xcdnh+h+nXL9BasNAGhoxIhBA=="/>
+    </item>
+    <item>
       <title>Canopy 0.3.0</title>
       <pubDate>Sun, 08 Nov 2026 08:23:53 +0000</pubDate>
       <sparkle:version>188</sparkle:version>
