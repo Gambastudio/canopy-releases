@@ -5,6 +5,20 @@
     <link>https://gambastudio.github.io/canopy-releases/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Canopy 0.5.0</title>
+      <pubDate>Wed, 25 Nov 2026 10:36:06 +0000</pubDate>
+      <sparkle:version>195</sparkle:version>
+      <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h3>Features</h3>
+<ul>
+<li>keep Canopy scans and Explorer responsive on 4 GB Macs with an SSD-backed folder… (epic [#49](https://github.com/Gambastudio/canopy/issues/49)) ([#67](https://github.com/Gambastudio/canopy/issues/67)) ([d3c5b83](https://github.com/Gambastudio/canopy/commit/d3c5b8398d455d021e0ba307b05410cd5445b3ea))</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/Gambastudio/canopy-releases/releases/download/v0.5.0/Canopy-0.5.0-macOS.zip" length="3934965" type="application/octet-stream" sparkle:edSignature="lwGExvbSjYfsdCDYBqK4kVyij0PpNHnoVwZQ5VUn/4X7oYg+H8f/ch+yBog9DQr4RYmPli3JJgs5pjr3ApZnCQ=="/>
+    </item>
+    <item>
       <title>Canopy 0.4.0</title>
       <pubDate>Fri, 20 Nov 2026 08:35:12 +0000</pubDate>
       <sparkle:version>191</sparkle:version>
